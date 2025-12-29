@@ -5,3 +5,27 @@ cost:
   rub:
     perKg: 400
     minimal: 350
+  volume:
+    perCubicMeter: 450
+    minimal: 500
+
+spring:
+  application:
+    name: tariff-calculator
+
+logging:
+  level:
+    ru.fastdelivery: INFO
+
+tariff:
+  coordinates:
+    minLatitude: 45
+    maxLatitude: 65
+    minLongitude: 30
+    maxLongitude: 96
+  distance:
+    minimalKm: 450
+
+server:
+  error:
+    include-message: always

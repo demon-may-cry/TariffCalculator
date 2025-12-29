@@ -1,5 +1,6 @@
 package ru.fastdelivery.properties.provider;
 
+import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -14,6 +15,7 @@ import java.math.BigDecimal;
  */
 @ConfigurationProperties("cost.rub")
 @Setter
+@Getter
 public class PricesRublesProperties implements WeightPriceProvider {
 
     private BigDecimal perKg;
