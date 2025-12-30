@@ -17,8 +17,8 @@ class ShipmentTest {
         var weight1 = new Weight(BigInteger.TEN);
         var weight2 = new Weight(BigInteger.ONE);
 
-        var packages = List.of(new Pack(weight1), new Pack(weight2));
-        var shipment = new Shipment(packages, new CurrencyFactory(code -> true).create("RUB"));
+        var packages = List.of(new Pack(weight1, null), new Pack(weight2, null));
+        var shipment = new Shipment(packages, new CurrencyFactory(code -> true).create("RUB"), null, null);
 
         var massOfShipment = shipment.weightAllPackages();
 
